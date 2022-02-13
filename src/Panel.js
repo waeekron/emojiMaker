@@ -87,7 +87,6 @@ const Panel = ({ database }) => {
   };
   const [offset, setOffset] = useState({ offsetX: 0, offsetY: 0 });
   const [coordinates, setCoordinates] = useState(initCoordinates);
-
   const changeSize = useCallback(() => {
     setDimensions({ width: window.innerHeight, heigth: window.innerHeight });
     setCoordinates(initCoordinates);
